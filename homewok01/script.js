@@ -1,0 +1,16 @@
+let priceOf30Phones;
+let priceOfOnePhone = 119.95;
+console.log("Price of one phone");
+console.log(priceOfOnePhone);
+let tax = 0.05;
+console.log("Tax");
+console.log(tax);
+let taxOfPhone = priceOfOnePhone * tax;
+console.log("Tax of the phone");
+console.log(taxOfPhone);
+priceOfOnePhone += taxOfPhone;
+console.log("Price of one phone with tax");
+console.log(priceOfOnePhone);
+priceOf30Phones = priceOfOnePhone * 30;
+console.log("Price of 30 phones");
+console.log(priceOf30Phones);
