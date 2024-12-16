@@ -3,23 +3,29 @@
 // Calculates your dog's age based on the conversion rate of 1 human year to 7 dog years
 // Note: Call the function in console to see answer
 // Bonus: Make the same function work for converting dog to human years as well
-function conversionHumanToDogYears(input) {
-  input = parseInt(prompt("Enter dog's age based on human years"));
-  if (Number.isNaN(input)) {
-    alert("Please enter a valid number.");
-  } else {
-    let conversion = input * 7;
-    return conversion;
+function conversionDogYears(input, number) {
+  input = prompt("Enter D for conversion to dog years or H to human years. ");
+  switch (input) {
+    case "D":
+      number = parseInt(prompt("Enter a number:"));
+      if (Number.isNaN(number)) {
+        alert("Please enter a valid number.");
+      } else {
+        let conversion = number * 7;
+        return conversion;
+      }
+      break;
+    case "H":
+      number = parseInt(prompt("Enter a number:"));
+      if (Number.isNaN(number)) {
+        alert("Please enter a valid number.");
+      } else {
+        let formula = parseInt(number / 7);
+        return ` dog has ${formula} years. `;
+      }
+      break;
+    default:
+      return "Invalid input";
   }
 }
-function conversionDogToHumanYears(input) {
-  input = parseInt(prompt("Enter dog's age based on dog years"));
-  if (Number.isNaN(input)) {
-    alert("Please enter a valid number.");
-  } else {
-    let formula = parseInt(input / 7);
-    return ` dog has ${formula} years. `;
-  }
-}
-console.log(conversionHumanToDogYears());
-console.log(conversionDogToHumanYears());
+console.log(conversionDogYears());
