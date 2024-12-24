@@ -9,9 +9,10 @@ let dog={
     name: "Lara",
     kind: "labrador",
     speak: function(message){
-        console.log(`Dog says: ${message}`);
-    }
+            console.log(`Dog says: ${message}`)
+        }
 }
 console.log(dog.name);
-dog.speak("hey bro!!!");
+let message= prompt("Enter a dog message");
+dog.speak(message);
 
