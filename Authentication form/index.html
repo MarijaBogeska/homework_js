@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="buttons">
+      <button class="buttons" id="registerBtn">Register</button>
+      <button class="buttons" id="loginBtn">Login</button>
+    </div>
+
+    <div class="register">
+      <div>
+        <label for="usernameR"
+          >Username <span id="invalidUsername"></span
+        ></label>
+        <input
+          type="text"
+          name="usernameR"
+          id="usernameR"
+          placeholder="someone"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email <span id="invalidEmail"></span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="someone@gmail.com"
+          required
+        />
+      </div>
+      <div>
+        <label for="password1"
+          >Password <span id="invalidPassword"></span
+        ></label>
+        <input
+          type="password"
+          name="password1"
+          id="password1"
+          placeholder="Enter here..."
+          required
+        />
+      </div>
+      <div>
+        <label for="age">Age <span id="invalidAge"></span></label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Ex. 22"
+          required
+        />
+      </div>
+
+      <button class="buttons" id="submit1">Register</button>
+    </div>
+    <div class="login">
+      <div>
+        <label for="usernameL">Username</label>
+        <input
+          type="text"
+          name="usernameL"
+          id="usernameL"
+          placeholder="someone"
+          required
+        />
+      </div>
+      <div>
+        <label for="password2">Password</label>
+        <input
+          type="password"
+          name="password2"
+          id="password2"
+          placeholder="Enter here..."
+          required
+        />
+      </div>
+      <button class="buttons" id="submit2">Log in</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
